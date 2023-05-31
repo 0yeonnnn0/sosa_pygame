@@ -19,9 +19,9 @@ class Player:
         elif self.to == [-1, 0]: self.angle = 90
         elif self.to == [-1, 1]: self.angle = 135
         elif self.to == [0, 1]: self.angle = 180
-        elif self.to == [1, 1]: self.angle = 225
-        elif self.to == [1, 0]: self.angle = 270
-        elif self.to == [1, -1]: self.angle = 315
+        elif self.to == [1, 1]: self.angle = -145
+        elif self.to == [1, 0]: self.angle = -90
+        elif self.to == [1, -1]: self.angle = 5
         elif self.to == [0, -1]: self.angle = 0
 
         rotated = pygame.transform.rotate(self.image, self.angle)
