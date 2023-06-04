@@ -3,7 +3,7 @@ import pygame
 class Player:
     def __init__(self, screen):
         width, height = screen.get_size()
-        self.image = pygame.image.load("pygame_dodge/dodge_src/player.png")
+        self.image = pygame.image.load("dodge_src/player.png")
         self.image = pygame.transform.scale(self.image, (32, 32))
         self.pos = [width/2, height/2]
         self.to = [0, 0]
