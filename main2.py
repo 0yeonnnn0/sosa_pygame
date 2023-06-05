@@ -31,9 +31,8 @@ def draw_player_health(scr,x,y,life):
     if life<0:
         life=0
     BAR_LENGTH=100
-    LIFE_LENGTH = 50
     BAR_HEIGHT=20
-    fill=life*LIFE_LENGTH
+    fill=life*BAR_LENGTH
     outline_rect=pygame.Rect(x,y,BAR_LENGTH,BAR_HEIGHT)
     fill_rect=pygame.Rect(x,y,fill,BAR_HEIGHT)
     if life > 0.6:
