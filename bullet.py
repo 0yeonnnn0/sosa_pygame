@@ -1,12 +1,13 @@
 import pygame
 
 class Bullet1:
+    score = 1
+    name = "Bullet1"
     def __init__(self, x, y, to_x, to_y):
         self.pos = [x, y]
         self.to = [to_x, to_y]
-        self.radius = 4
-        self.color = (255, 255, 0)
-        self.score = 2
+        self.radius = 3
+        self.color = (255, 255, 0) #노란색
 
     def update_and_draw(self, dt, screen):
         width, height = screen.get_size()
@@ -16,12 +17,13 @@ class Bullet1:
         pygame.draw.circle(screen, self.color, self.pos, self.radius)
 
 class Bullet2:
+    score = 2
+    name = "Bullet2"
     def __init__(self, x, y, to_x, to_y):
         self.pos = [x, y]
         self.to = [to_x, to_y]
-        self.radius = 6
-        self.color = (255, 255, 0)
-        self.score = 3
+        self.radius = 4
+        self.color = (0, 255, 0) #초록색
 
     def update_and_draw(self, dt, screen):
         width, height = screen.get_size()
@@ -31,12 +33,13 @@ class Bullet2:
         pygame.draw.circle(screen, self.color, self.pos, self.radius)
 
 class Bullet3:
+    score = 3
+    name = "Bullet3"
     def __init__(self, x, y, to_x, to_y):
         self.pos = [x, y]
         self.to = [to_x, to_y]
-        self.radius = 3
-        self.color = (255, 255, 0)
-        self.score = 1
+        self.radius = 5
+        self.color = (80,188,223) #히늘색
 
     def update_and_draw(self, dt, screen):
         width, height = screen.get_size()

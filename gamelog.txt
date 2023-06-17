@@ -1,0 +1,9 @@
+djgi:9.0
+llod:8.0
+zxdc:7.6
+ASDL:7.0
+asdk:5.6
+asdh:23.2
+CHA:23.6
+asdg:31.8
+lmsd:23.1
